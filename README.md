@@ -1,4 +1,4 @@
-# Strime
+# Strime :video_camera: :fire:
 
 1. [Presentation](#presentation)
     1. [History](#history)
