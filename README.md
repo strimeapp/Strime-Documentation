@@ -24,8 +24,8 @@
 
 Franck Haegeli | Jean-Philippe Cabaroc | Romain Biard
 -------------- | --------------------- | ------------
-Content from cell 1 | Content from cell 2 | Content from cell 3
-Content in the first column | Content in the second column | Content in the third column
+Former war reporter and specialized in animation for more than sixteen years. His experience (sometimes painful) with his clients is the starting point of Strime. | Graphic designer for more than 10 years, Jean-Philippe worked in communication agencies before becoming an independent. He strived to make Strime beautiful and usable. | Fierce and sharp developer, Romain is also a fan of running. He was responsible of making Strime functional and he sweated to make the tool as powerful as possible.
+- | - | -
 
 ### Milestones
 
