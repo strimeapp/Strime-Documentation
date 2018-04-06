@@ -22,6 +22,11 @@
 
 ### Team
 
+Franck Haegeli | Jean-Philippe Cabaroc | Romain Biard
+-------------- | --------------------- | ------------
+Content from cell 1 | Content from cell 2 | Content from cell 3
+Content in the first column | Content in the second column | Content in the third column
+
 ### Milestones
 
 ## Architecture
@@ -38,8 +43,8 @@
 
 ### What can be improved
 
-- unit tests
-- upgrade to a newer version of Symfony
+- [ ] writing unit tests
+- [ ] upgrade each app to a newer version of Symfony
 
 ### I found a bug
 
