@@ -64,12 +64,50 @@ Some people that helped to the development of Strime have to be thanked:
 - Numelink (now [Digital League]((http://www.digital-league.org/))) for their grant and support
 - [Saint-Etienne Métropôle](https://www.saint-etienne-metropole.fr) for their support
 - [Startup Chile](http://www.startupchile.org/) / [Corfo](https://www.corfo.cl/) for their grant and support
-- [iOweb](https://www.ioweb.fr/) / [Datailor](http://www.datailor.fr/) for their advices
+- [iOweb](https://www.ioweb.fr/) / [Datailor](http://www.datailor.fr/) for their advices (and more specifically [Yannis Mazzer](https://github.com/ymazzer))
 - Pedro Vargas Ruiz for his work on the spanish translation
 
 
 ## Architecture
 
+### The main principles
+
+Strime is designed in 3 different applications:
+- the first one to run the website
+- the second one which is the API
+- the third one which is an encoding API
+
+We decoupled it into these 3 apps to be able to better handle the resources and split it into different servers to make it scale.
+
+All of them are developed under [Symfony](https://symfony.com/) 2.8, which is a PHP framework.
+
+### Our production architecture
+
+When Strime was running on production, it was first running on 3 different servers: 1 for the website, 1 for the API, and 1 for the encoding API.
+
+This evolved over time, when we began working with [Yannis](https://github.com/ymazzer) to include load balancing, more security with a private network, etc...
+
+### Simplifying the architecture
+
+What you highly advice is you separate the encoding API from the rest on the infrastructure. Indeed, the encoding process, is very demanding in terms of resources, and when you have it running on your server, it occurs that the rest of the applications are inaccessible because of the memory consumed by the encoding API.
+
+2 servers is then the minimal configuration for a stable and efficient infrastructure.
+
+On our side, we used Ubuntu 16.04, PHP7.0, MySQL and [Nginx](https://www.nginx.com/) to make Strime run on our servers. We also used [Let's Encrypt](https://letsencrypt.org/) for the SSL certificates, [PHP-FFMPEG](https://github.com/php-ffmpeg/php-ffmpeg) and therefore [FFMPEG](https://ffmpeg.org/) for the video conversion.
+
+### A word on FFMPEG
+
+In order to work properly, FFMPEG _HAS TO_ [be compiled](https://trac.ffmpeg.org/wiki/CompilationGuide) and not installed through a package installer like APT-GET. This is particularly important to include the support of x265 and other specific codecs.
+
+### Additional services
+
+Strime is also connected to 3rd party services. You will want to create a free [Sendgrid](https://sendgrid.com/) account for handling the emails, a free [Mailchimp](https://mailchimp.com/) account to store the list of subscribers to your mailing list, create a [Slack](https://slack.com/) channel in which we will notify you when some critical actions occurs on your application.
+
+But more importantly, you will need AWS S3 buckets to store your content. You'll need one for the videos, one for the comments (the generated thumbnails), one for the audios and one for the images.
+
+If you want to allow your users to login with Google, you will need to create an API access in the console, and if you want to use Facebook, an app ID.
+
+On our end, we also used Hubspot during some time for marketing purposes, and eventually dropped it, but it can still be configured.
 
 ## Installation
 
@@ -84,6 +122,10 @@ Some people that helped to the development of Strime have to be thanked:
 
 
 ## How to contribute
+
+You can contribute to each application individually. The best way to proceed is to create pull requests.
+
+Since these applications are no longer maintained by the founding team, you can also fork them, and make them evolve as you see fit, for your own needs, but contributing to a global, open source project, is always nice.
 
 
 ### What can be improved
