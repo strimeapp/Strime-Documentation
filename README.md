@@ -73,9 +73,9 @@ Some people that helped to the development of Strime have to be thanked:
 ### The main principles
 
 Strime is designed in 3 different applications:
-- the first one to run the website
-- the second one which is the API
-- the third one which is an encoding API
+- the first one to [run the website](https://github.com/strimeapp/frontend)
+- the second one which is [the API](https://github.com/strimeapp/api)
+- the third one which is an [encoding API](https://github.com/strimeapp/encoding-api)
 
 We decoupled it into these 3 apps to be able to better handle the resources and split it into different servers to make it scale.
 
