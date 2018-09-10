@@ -35,10 +35,14 @@ Former war reporter and specialized in animation for more than sixteen years. Hi
 ### History
 
 [Strime](https://www.strime.io) was created in 2015 by 3 french people, in Saint-Etienne. The idea came from Franck, who is a video producer and was looking for such a tool to work with his clients. After some research, he realized that a couple of tools existed but all of them were only accessible in english. Nonetheless, the french market is a very language-sensitive market and very little of his client would have been able to use a platform only accessible in english.
+
 Moreover, some of them had a pretty complex interface, designed by video experts for video experts.
+
 He then decided to gather a small team around him to create something that would first be dedicated to the french market, with the goal to be dead simple in order to be widely adopted by the client, because if the client doesn't adopt it, it's pointless.
+
 They won a grant delivered by their region in France and the professional organization [Numelink](http://www.digital-league.org/) for this project, they also integrated [Startup Chile](http://www.startupchile.org/) in february 2017.
-In april 2018 they took the decision to take down the company for economical reasons, and to open source the code of the platform, in order for the project to keep living and to offer a solution for those who might be interested in having their own Strime installation.
+
+In april 2018 they took the decision to take down the company for economical reasons, and to open source the code of the platform, in order for the project to keep living and to offer a solution for those who might be interested in having their own Strime installation. The website has been shut down on 09/10/2018 and the project has been open sourced the same day.
 
 
 ### Milestones
