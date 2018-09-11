@@ -140,8 +140,18 @@ Since these applications are no longer maintained by the founding team, you can 
 
 ### I found a bug
 
+If you found a bug and don't know how to resolve it, please open an issue in the corresponding repo.
+
+If you found a bug and know how to resolve it, please submit a PR in the corresponding repo.
+
+In both cases, try to be as explicit about your environment, and how to reproduce the bug.
+
 
 ### I've got an idea
+
+Excellent! Feel free to implement it and submit PR(s) in the corresponding repo(s), or to create an issue describing your feature idea.
+
+Best ideas are those that do not tackle very specific problems, but those that can solve everybody to have a better experience on Strime.
 
 
 ## FAQ
@@ -149,8 +159,15 @@ Since these applications are no longer maintained by the founding team, you can 
 
 ### Can I remove Strime's brand and use mine instead?
 
+Yes you can! Strime is no open sourced and can be used as you see fit.
 
-### ...
+We'd be glad if you could mention on your website where it comes from though.
 
 
 ## Credits
+
+[Romain Biard](https://www.github.com/romain)
+
+[Franck Haegeli](https://github.com/FranckHAEGELI)
+
+Jean-Philippe Cabaroc
