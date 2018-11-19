@@ -115,6 +115,27 @@ On our end, we also used Hubspot during some time for marketing purposes, and ev
 
 ## Installation
 
+Ideally, for each application, you would create a git hook or something similar to automate deployment.
+
+For each application, you will have to clone the repository, and install dependencies by running `composer install`. You will also want to install databases: `php app/console doctrine:schema:update --force` and to install the assets: `php app/console assets:install –symlink`.
+
+We recommend that you update your PHP setup to increase the allowed upload limit:
+
+```
+upload_max_filesize = 2G
+post_max_size = 2G
+```
+
+You will need NPM and uglify set up on your servers:
+
+```
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt-get install npm
+sudo npm install -g uglify-js
+sudo mv /usr/local/bin/uglifyjs /usr/bin/uglifyjs
+```
+
 
 ### Encoding application
 
