@@ -180,7 +180,7 @@ Best ideas are those that do not tackle very specific problems, but those that c
 
 ### Can I remove Strime's brand and use mine instead?
 
-Yes you can! Strime is no open sourced and can be used as you see fit.
+Yes you can! Strime is now open sourced and can be used as you see fit.
 
 We'd be glad if you could mention on your website where it comes from though.
 
